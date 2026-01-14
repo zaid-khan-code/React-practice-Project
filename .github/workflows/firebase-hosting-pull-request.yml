@@ -17,5 +17,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_REACT_PRACTICE_PROJECT }}
-          projectId: react-practice-project
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_REACT_ASSIGMENT_ZAID }}
+          projectId: react-assigment-zaid

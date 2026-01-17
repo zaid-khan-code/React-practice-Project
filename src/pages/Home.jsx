@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
- const Home = () => {
+const Home = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
       <div className="max-w-3xl w-full space-y-8">
@@ -41,6 +41,8 @@ import { Link } from "react-router-dom";
                   Counter App
                 </Link>
               </h1>
+
+              <p className="mt-1 text-sm text-gray-500">Go to Counter Page</p>
             </div>
           </div>
 
@@ -55,6 +57,26 @@ import { Link } from "react-router-dom";
                   Authentication
                 </Link>
               </h1>
+              <p className="mt-1 text-sm text-gray-500">
+                Go to Authentication Page
+              </p>
+            </div>
+          </div>
+
+          {/* Layout Assignment */}
+          <div className="bg-white overflow-hidden shadow rounded-lg border border-gray-200 hover:shadow-md transition-shadow">
+            <div className="px-4 py-5 sm:p-6 text-center">
+              <h1 className="text-2xl font-bold">
+                <Link
+                  to="/layout"
+                  className="text-gray-900 hover:text-indigo-600 block p-2"
+                >
+                  Component Composition (Layout)
+                </Link>
+              </h1>
+              <p className="mt-1 text-sm text-gray-500">
+                Go to Component Composition Page
+              </p>
             </div>
           </div>
         </div>
@@ -62,4 +84,4 @@ import { Link } from "react-router-dom";
     </div>
   );
 };
-export default Home
+export default Home;
